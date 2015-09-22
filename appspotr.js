@@ -35,18 +35,6 @@ var req = http.get(options, function(res) {
     var answer = solveTheChallenge(words);
 
     console.log('And the answer is: ', answer);
-
-    var answerCount = 0;
-    var wrongCount = 0;
-
-    copy.forEach(function(element) {
-        if (element === answer) answerCount++;
-        else wrongCount++;
-    });
-
-    console.log('Answer: ', answerCount);
-    console.log('Wrong: ', wrongCount);
-    // ...and/or process the entire body here.
   });
 });
 
